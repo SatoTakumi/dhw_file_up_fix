@@ -1,0 +1,24 @@
+{
+  "name": "DHW CAMUPUS PAGE FILE UPLOAD FIX",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "ファイルをアップロードできるようにするだけ。",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "embeded-script.js"
+  ],
+  "permissions": [
+    "https://campus.dhw.ac.jp/cp-portal/theme_report/*",
+    "https://campus.dhw.ac.jp/cp-portal/upload/*"
+  ]
+}
